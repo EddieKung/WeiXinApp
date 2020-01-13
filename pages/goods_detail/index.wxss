@@ -1,0 +1,103 @@
+page {
+  padding-bottom: 90rpx;
+}
+.goods-main .swiper-detail swiper {
+  height: 65vw;
+  text-align: center;
+}
+.goods-main .swiper-detail swiper swiper-item image {
+  width: 60%;
+}
+.goods-main .goods-price {
+  font-size: 36rpx;
+  font-weight: 600;
+  color: var(--themeColor);
+}
+.goods-main .goods-panel {
+  display: flex;
+  padding: 10rpx 0;
+}
+.goods-main .goods-panel .goods-title {
+  padding: 0 10rpx;
+  flex: 5;
+  font-size: 30rpx;
+  color: #484848;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.goods-main .goods-panel .goods-collect {
+  border-left: 1px solid #dddddd;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.goods-main .goods-panel .goods-collect .icon-shoucang {
+  color: #999999;
+}
+.goods-main .goods-panel .goods-collect .icon-shoucang1 {
+  color: #999999;
+}
+.goods-main .goods-panel .goods-collect .collect-text {
+  color: #999999;
+}
+.goods-main .goods-content .goods-detail {
+  font-size: 36rpx;
+  font-weight: 600;
+  color: var(--themeColor);
+  padding: 20rpx;
+  border-top: 10px solid #f4f4f4;
+  border-bottom: 10px solid #f4f4f4;
+}
+.goods-main .goods-ctrl {
+  border-top: 1rpx solid #ccc;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 98rpx;
+  background-color: #fff;
+  display: flex;
+}
+.goods-main .goods-ctrl .service {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 24rpx;
+  position: relative;
+  text-align: center;
+}
+.goods-main .goods-ctrl .service button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.goods-main .goods-ctrl .goods-cart {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4b73f;
+  color: #fff;
+  font-weight: 600;
+  font-size: 36rpx;
+}
+.goods-main .goods-ctrl .goods-buy {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eb4450;
+  color: #fff;
+  font-size: 36rpx;
+  font-weight: 600;
+}

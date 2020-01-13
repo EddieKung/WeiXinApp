@@ -1,0 +1,33 @@
+<view class="main">
+    <!-- 搜索栏 -->
+    <SearchInput></SearchInput>
+    <!-- 轮播图 -->
+    <view class="swiper-index">
+        <swiper autoplay circular indicator-dots>
+            <swiper-item wx:for="{{swiperList}}" wx:key="goods_id">
+                <navigator url="{{item.navigator_url}}">
+                    <image mode="widthFix" src="{{item.image_src}}"></image>
+                </navigator>
+            </swiper-item>
+        </swiper>
+    </view>
+    <!-- 分类导航 -->
+    <view class="cate-index">
+        <navigator wx:for="{{catesList}}" wx:key="name" open-type="switchTab" url="/pages/category/index">
+            <image mode="widthFix" src="{{item.image_src}}"></image>
+        </navigator>
+    </view>
+    <!-- 推广楼层 -->
+    <view class="floor-index">
+        <view class="floor-list" wx:for="{{floorList}}" wx:for-item="item1" wx:for-index="index1" wx:key="floor_title">
+            <view class="floor-title">
+                <image mode="widthFix" src="{{item1.floor_title.image_src}}"></image>
+            </view>
+            <view class="floor-content">
+                <navigator wx:for="{{item1.product_list}}" wx:for-item="item2" wx:for-index="index2" wx:key="name" url="{{item2.navigator_url}}" open-type="navigate">
+                    <image mode="{{index2===0?'widthFix':'scaleToFill'}}" src="{{item2.image_src}}"></image>
+                </navigator>
+            </view>
+        </view>
+    </view>
+</view>

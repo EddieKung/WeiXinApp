@@ -1,0 +1,58 @@
+page {
+  height: 100%;
+}
+.cate-index {
+  height: 100%;
+}
+.cate-index .cate-content {
+  display: flex;
+  height: calc( 100vh - 90rpx );
+}
+.cate-index .cate-content .scroll-left {
+  flex: 2;
+}
+.cate-index .cate-content .scroll-left .scroll-left-list {
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+  background-color: #b8c3c7;
+  border-bottom: 1px solid #ebebeb;
+}
+.cate-index .cate-content .scroll-left .active {
+  color: var(--themeColor);
+  border-left: 5rpx solid currentColor;
+}
+.cate-index .cate-content .scroll-right {
+  flex: 5;
+}
+.cate-index .cate-content .scroll-right .goods-content .scroll-right-title {
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cate-index .cate-content .scroll-right .goods-content .scroll-right-title .left {
+  color: #c1c1c1;
+}
+.cate-index .cate-content .scroll-right .goods-content .scroll-right-title .title {
+  padding: 0 10px;
+}
+.cate-index .cate-content .scroll-right .goods-content .scroll-right-title .right {
+  color: #c1c1c1;
+}
+.cate-index .cate-content .scroll-right .goods-content .scroll-right-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cate-index .cate-content .scroll-right .goods-content .scroll-right-list navigator {
+  width: 33.33%;
+  text-align: center;
+}
+.cate-index .cate-content .scroll-right .goods-content .scroll-right-list navigator image {
+  width: 50%;
+}
+.cate-index .cate-content .scroll-right .goods-content .scroll-right-list navigator .goods-name {
+  font-size: 30rpx;
+}
